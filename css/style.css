@@ -69,7 +69,7 @@ header .logo img {
   background-color: #f6f6f6;
   font-weight: 700;
   height: 74px;
-  margin: 22px 0px;
+  margin: 22px 0px 22px 5px;
   border-radius: 20px;
   box-shadow: 0px 5px 10px 0px #CFCFCF;
   display: flex;
@@ -84,6 +84,10 @@ header .logo img {
   font-weight: 500;
   align-items: center;
   justify-content: center;
+  margin-left: -10px;
+}
+.fonction__bloc div i {
+  margin: 0px 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
