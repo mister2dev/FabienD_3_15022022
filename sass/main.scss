@@ -1,0 +1,87 @@
+body {
+    font-family:'Roboto' ;
+}
+
+footer h3 {
+    font-family: 'shrikhand';
+}
+
+.card-image img{
+    width:100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header .logo {
+    padding: 26px 0px 10px 0px;
+    & img {
+        width: 160px;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.logo, .localisation {
+    text-align: center;
+}
+
+.localisation {
+    padding: 16px 0px;
+    background-color: #eaeaea;
+    box-shadow: inset 0px 5px 4px -2px #CFCFCF;
+    & i {
+        margin-right: 14px;
+    }
+}
+
+.explore {
+    background-color: #f6f6f6;
+    padding: 46px;
+    flex-direction: column;
+    text-align: center;
+    & .explore__button {
+        margin: 30px auto 0px auto;
+        border-radius: 30px;
+        background: #9356dc;
+        background: linear-gradient(353deg,#9356dc 0%, #ff79da 80%);
+        box-shadow: 0px 5px 5px 0px #CFCFCF;
+    }
+        & a {
+        color: white;
+        padding: 16px 20px;
+    }
+        & h2 {
+            padding: 0px 10px;
+            margin: 0px;
+        }
+}
+
+.fonction {
+    padding: 30px 20px;
+}
+
+.fonction__bloc div {
+    background-color: #f6f6f6;
+    font-weight: 700;
+    height: 74px;
+    margin: 22px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 0px #CFCFCF;
+    display: flex;
+    align-items: center;
+    & span {
+        color: white;
+        background-color: #9356dc;
+        height: 20px;
+        width: 20px;
+        border-radius: 30px;
+        font-weight: 500;
+        align-items: center;
+        justify-content: center;
+    }
+}
