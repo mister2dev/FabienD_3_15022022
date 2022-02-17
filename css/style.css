@@ -41,7 +41,7 @@ header .logo img {
 
 .explore {
   background-color: #f6f6f6;
-  padding: 46px;
+  padding: 40px;
   flex-direction: column;
   text-align: center;
 }
@@ -54,15 +54,23 @@ header .logo img {
 }
 .explore a {
   color: white;
-  padding: 16px 20px;
+  padding: 18px 28px;
 }
 .explore h2 {
   padding: 0px 10px;
   margin: 0px;
 }
+.explore p {
+  margin: 12px 0px 0px 0px;
+  font-size: 17px;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+}
 
 .fonction {
-  padding: 30px 20px;
+  padding: 24px 20px 24px 30px;
 }
 
 .fonction__bloc div {
@@ -78,16 +86,23 @@ header .logo img {
 .fonction__bloc div span {
   color: white;
   background-color: #9356dc;
-  height: 20px;
-  width: 20px;
+  height: 24px;
+  width: 24px;
   border-radius: 30px;
   font-weight: 500;
   align-items: center;
   justify-content: center;
-  margin-left: -10px;
+  margin-left: -14px;
 }
 .fonction__bloc div i {
-  margin: 0px 10px;
+  margin: 0px 22px;
+  color: #919191;
+  font-size: 18px;
+}
+
+.fonction__bloc .step1 i {
+  font-size: 22px;
+  margin-left: 26px;
 }
 
 /*# sourceMappingURL=style.css.map */
