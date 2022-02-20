@@ -1,9 +1,6 @@
 body {
   font-family: "Roboto";
-}
-
-footer h3 {
-  font-family: "shrikhand";
+  box-sizing: border-box;
 }
 
 a {
@@ -11,22 +8,20 @@ a {
   color: black;
 }
 
+.flex {
+  display: flex;
+}
+
 header .logo {
+  text-align: center;
   padding: 26px 0px 10px 0px;
 }
 header .logo img {
   width: 160px;
 }
 
-.flex {
-  display: flex;
-}
-
-.logo, .localisation {
-  text-align: center;
-}
-
 .localisation {
+  text-align: center;
   padding: 16px 0px;
   background-color: #eaeaea;
   box-shadow: inset 0px 5px 4px -2px #CFCFCF;
@@ -35,35 +30,30 @@ header .logo img {
   margin-right: 14px;
 }
 
-.explore {
+.reserve {
   background-color: #f6f6f6;
   padding: 40px;
   flex-direction: column;
   text-align: center;
 }
-.explore .explore__button {
+.reserve .reserve__button {
   margin: 30px auto 0px auto;
   border-radius: 30px;
   background: #9356dc;
   background: linear-gradient(353deg, #9356dc 0%, #ff79da 80%);
   box-shadow: 0px 5px 5px 0px #CFCFCF;
 }
-.explore a {
-  color: white;
-  padding: 18px 28px;
-}
-.explore h2 {
+.reserve h2 {
   padding: 0px 10px;
   margin: 0px;
 }
-.explore p {
+.reserve p {
   margin: 12px 0px 0px 0px;
   font-size: 17px;
 }
-
-.restaurants {
-  background-color: #f6f6f6;
-  padding: 40px 20px 40px 20px;
+.reserve a {
+  color: white;
+  padding: 18px 28px;
 }
 
 .fonction {
@@ -80,7 +70,7 @@ header .logo img {
   display: flex;
   align-items: center;
 }
-.fonction__bloc div span {
+.fonction__bloc span {
   color: white;
   background-color: #9356dc;
   height: 24px;
@@ -91,33 +81,35 @@ header .logo img {
   justify-content: center;
   margin-left: -14px;
 }
-.fonction__bloc div i {
+.fonction__bloc i {
   margin: 0px 22px;
   color: #919191;
   font-size: 18px;
 }
-
 .fonction__bloc .step1 i {
   font-size: 22px;
   margin-left: 26px;
 }
 
-.card {
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 40px 20px 40px 20px;
+}
+.restaurants__card {
   border-radius: 20px;
   box-shadow: 0px 5px 10px 0px #CFCFCF;
   margin-bottom: 20px;
   overflow: hidden;
 }
-.card img {
+.restaurants__card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
-
-.card-image {
+.restaurants__card-image {
   position: relative;
 }
-.card-image .new {
+.restaurants__card-image .new {
   position: absolute;
   top: 14px;
   right: 12px;
@@ -127,17 +119,16 @@ header .logo img {
   border-radius: 2px;
   font-weight: bold;
 }
-
-.card-body {
+.restaurants__card-body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding: 14px 10px;
 }
-.card-body h3 {
+.restaurants__card-body h3 {
   margin: 2px 0px;
 }
-.card-body i {
+.restaurants__card-body i {
   font-size: x-large;
   margin-right: 10px;
 }
@@ -152,6 +143,7 @@ header .logo img {
 }
 .footer h3 {
   margin: 0px;
+  font-family: "shrikhand";
 }
 .footer ul {
   margin: 0px;
