@@ -41,7 +41,10 @@ header .logo img {
   border-radius: 30px;
   background: #9356dc;
   background: linear-gradient(353deg, #9356dc 0%, #ff79da 80%);
-  box-shadow: 0px 5px 5px 0px #CFCFCF;
+  filter: drop-shadow(0px 5px 4px #A1A1A1);
+}
+.reserve .reserve__button:hover {
+  filter: drop-shadow(0px 5px 5px #707070) brightness(110%);
 }
 .reserve h2 {
   padding: 0px 10px;
@@ -70,6 +73,12 @@ header .logo img {
   display: flex;
   align-items: center;
 }
+.fonction__bloc div:hover {
+  background-color: #F5EDFF;
+}
+.fonction__bloc div:hover i {
+  color: #9356dc;
+}
 .fonction__bloc span {
   color: white;
   background-color: #9356dc;
@@ -85,6 +94,9 @@ header .logo img {
   margin: 0px 22px;
   color: #919191;
   font-size: 18px;
+}
+.fonction__bloc i:hover {
+  color: #9356dc;
 }
 .fonction__bloc .step1 i {
   font-size: 22px;
@@ -128,9 +140,20 @@ header .logo img {
 .restaurants__card-body h3 {
   margin: 2px 0px;
 }
-.restaurants__card-body i {
+.restaurants__card-body .heart-scale {
   font-size: x-large;
   margin-right: 10px;
+}
+.restaurants__card-body .heart-scale:hover {
+  animation: heart-scale 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+}
+@keyframes heart-scale {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .footer {
