@@ -139,20 +139,29 @@ header .logo {
             h3 {
                 margin: 2px 0px;
             }
-            .heart-scale {
+            .empty-heart {
+                display: block;
                 font-size: x-large;
-                margin-right: 10px;
+                position: relative;
+                transition: color 150ms 50ms ease;
                 &:hover {
-                    animation: heart-scale 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+                    color: transparent;
+                    .full-heart {
+                        transform: scale(1);
+                    }
                 }
             }
-            @keyframes heart-scale {
-                0% {
-                transform: scale(0.5);
-                }
-                100% {
-                transform: scale(1);
-                }
+            .full-heart {
+                font-size: x-large;
+                margin-right: 10px;
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                background: linear-gradient(0deg, #FF79DA, #9356DC);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transform:scale(0);
+                transition: transform 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
             }
         }        
     }
@@ -168,6 +177,7 @@ header .logo {
     h3{
         margin: 0px;
         font-family: 'shrikhand';
+        font-weight: normal;
     }
     ul {
         margin: 0px;
