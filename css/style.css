@@ -8,6 +8,10 @@ a {
   color: black;
 }
 
+img {
+  width: 100%;
+}
+
 .flex {
   display: flex;
 }
@@ -36,27 +40,26 @@ header .logo img {
   flex-direction: column;
   text-align: center;
 }
-.reserve .reserve__button {
-  margin: 30px auto 0px auto;
-  border-radius: 30px;
-  background: #9356dc;
-  background: linear-gradient(353deg, #9356dc 0%, #ff79da 80%);
-  filter: drop-shadow(0px 5px 4px #A1A1A1);
-}
-.reserve .reserve__button:hover {
-  filter: drop-shadow(0px 5px 5px #707070) brightness(110%);
-}
 .reserve h2 {
   padding: 0px 10px;
   margin: 0px;
 }
 .reserve p {
-  margin: 12px 0px 0px 0px;
+  margin: 12px 0px 30px 0px;
   font-size: 17px;
 }
-.reserve a {
+
+.button {
+  margin: 0px auto 0px auto;
   color: white;
   padding: 18px 28px;
+  border-radius: 30px;
+  background: #9356dc;
+  background: linear-gradient(353deg, #9356dc 0%, #ff79da 80%);
+  filter: drop-shadow(0px 5px 4px #A1A1A1);
+}
+.button:hover {
+  filter: drop-shadow(0px 5px 5px #707070) brightness(110%);
 }
 
 .fonction {
@@ -140,19 +143,21 @@ header .logo img {
 .restaurants__card-body h3 {
   margin: 2px 0px;
 }
-.restaurants__card-body .empty-heart {
+
+.empty-heart {
   display: block;
   font-size: x-large;
   position: relative;
   transition: color 150ms 50ms ease;
 }
-.restaurants__card-body .empty-heart:hover {
+.empty-heart:hover {
   color: transparent;
 }
-.restaurants__card-body .empty-heart:hover .full-heart {
+.empty-heart:hover .full-heart {
   transform: scale(1);
 }
-.restaurants__card-body .full-heart {
+
+.full-heart {
   font-size: x-large;
   margin-right: 10px;
   position: absolute;
@@ -163,6 +168,33 @@ header .logo img {
   -webkit-text-fill-color: transparent;
   transform: scale(0);
   transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.logo a {
+  position: absolute;
+  left: 20px;
+}
+.logo a i {
+  font-size: larger;
+}
+
+.page-title {
+  font-family: "shrikhand";
+  align-items: baseline;
+  justify-content: space-between;
+}
+.page-title h1 {
+  font-size: 26px;
+  font-weight: normal;
+}
+
+.menu {
+  border-radius: 40px 40px 0px 0px;
+  position: relative;
+  top: -50px;
+}
+.menu h1 {
+  margin: 0px;
 }
 
 .footer {
