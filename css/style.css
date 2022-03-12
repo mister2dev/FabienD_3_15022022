@@ -3,6 +3,10 @@ body {
   box-sizing: border-box;
 }
 
+.background {
+  background-color: #f6f6f6;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -111,10 +115,11 @@ header .logo img {
   padding: 40px 20px 40px 20px;
 }
 .restaurants__card {
-  border-radius: 20px;
+  border-radius: 16px;
   box-shadow: 0px 5px 10px 0px #CFCFCF;
   margin-bottom: 20px;
   overflow: hidden;
+  background-color: white;
 }
 .restaurants__card img {
   width: 100%;
@@ -182,6 +187,7 @@ header .logo img {
   font-family: "shrikhand";
   align-items: baseline;
   justify-content: space-between;
+  margin-bottom: 28px;
 }
 .page-title h1 {
   font-size: 26px;
@@ -192,9 +198,52 @@ header .logo img {
   border-radius: 40px 40px 0px 0px;
   position: relative;
   top: -50px;
+  display: flex;
+  flex-direction: column;
 }
 .menu h1 {
   margin: 0px;
+}
+
+.menu section {
+  margin-bottom: 20px;
+}
+
+.menu-anim {
+  margin-bottom: 14px;
+}
+
+.menu-anim h3, .menu-anim p {
+  margin: 0px;
+}
+
+.menu h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+.menu h2::after {
+  content: "";
+  display: block;
+  background-color: #99e2d0;
+  height: 3px;
+  width: 40px;
+  margin-top: 5px;
+}
+
+.menu .select {
+  align-items: flex-end;
+}
+
+.menu span {
+  font-weight: bold;
+}
+
+.menu i {
+  margin-right: 20px;
+}
+
+.choice {
+  justify-content: space-between;
 }
 
 .footer {
