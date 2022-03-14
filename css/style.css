@@ -1,0 +1,276 @@
+body {
+  font-family: "Roboto";
+  box-sizing: border-box;
+}
+
+.background {
+  background-color: #f6f6f6;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+header .logo {
+  text-align: center;
+  padding: 24px 0px 10px 0px;
+}
+header .logo img {
+  width: 160px;
+}
+
+.localisation {
+  text-align: center;
+  padding: 16px 0px;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 5px 4px -2px #CFCFCF;
+}
+.localisation i {
+  margin-right: 14px;
+}
+
+.reserve {
+  background-color: #f6f6f6;
+  padding: 40px;
+  flex-direction: column;
+  text-align: center;
+}
+.reserve h2 {
+  padding: 0px 10px;
+  margin: 0px;
+}
+.reserve p {
+  margin: 12px 0px 30px 0px;
+  font-size: 17px;
+}
+
+.button {
+  margin: 0px auto 0px auto;
+  color: white;
+  padding: 18px 28px;
+  border-radius: 30px;
+  background: #9356dc;
+  background: linear-gradient(353deg, #9356dc 0%, #ff79da 80%);
+  filter: drop-shadow(0px 5px 4px #A1A1A1);
+}
+.button:hover {
+  filter: drop-shadow(0px 5px 5px #707070) brightness(110%);
+}
+
+.fonction {
+  padding: 24px 20px 24px 30px;
+}
+
+.fonction__bloc div {
+  background-color: #f6f6f6;
+  font-weight: 700;
+  height: 74px;
+  margin: 22px 0px 22px 5px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px #CFCFCF;
+  display: flex;
+  align-items: center;
+}
+.fonction__bloc div:hover {
+  background-color: #F5EDFF;
+}
+.fonction__bloc div:hover i {
+  color: #9356dc;
+}
+.fonction__bloc span {
+  color: white;
+  background-color: #9356dc;
+  height: 24px;
+  width: 24px;
+  border-radius: 30px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  margin-left: -14px;
+}
+.fonction__bloc i {
+  margin: 0px 22px;
+  color: #919191;
+  font-size: 18px;
+}
+.fonction__bloc i:hover {
+  color: #9356dc;
+}
+.fonction__bloc .step1 i {
+  font-size: 22px;
+  margin-left: 26px;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 40px 20px 40px 20px;
+}
+.restaurants__card {
+  border-radius: 16px;
+  box-shadow: 0px 5px 10px 0px #CFCFCF;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: white;
+}
+.restaurants__card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.restaurants__card-image {
+  position: relative;
+}
+.restaurants__card-image .new {
+  position: absolute;
+  top: 14px;
+  right: 12px;
+  background-color: #99e2d0;
+  color: #0da17d;
+  padding: 6px 12px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+.restaurants__card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 14px 10px;
+}
+.restaurants__card-body h3 {
+  margin: 2px 0px;
+}
+
+.empty-heart {
+  display: block;
+  font-size: x-large;
+  position: relative;
+  transition: color 150ms 50ms ease;
+}
+.empty-heart:hover {
+  color: transparent;
+}
+.empty-heart:hover .full-heart {
+  transform: scale(1);
+}
+
+.full-heart {
+  font-size: x-large;
+  margin-right: 10px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background: linear-gradient(0deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.logo a {
+  position: absolute;
+  left: 20px;
+}
+.logo a i {
+  font-size: larger;
+}
+
+.page-title {
+  font-family: "shrikhand";
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.page-title h1 {
+  font-size: 26px;
+  font-weight: normal;
+}
+
+.menu {
+  border-radius: 40px 40px 0px 0px;
+  position: relative;
+  top: -50px;
+  display: flex;
+  flex-direction: column;
+}
+.menu h1 {
+  margin: 0px;
+}
+
+.menu section {
+  margin-bottom: 20px;
+}
+
+.menu-anim {
+  margin-bottom: 14px;
+}
+
+.menu-anim h3, .menu-anim p {
+  margin: 0px;
+}
+
+.menu h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+.menu h2::after {
+  content: "";
+  display: block;
+  background-color: #99e2d0;
+  height: 3px;
+  width: 40px;
+  margin-top: 5px;
+}
+
+.menu .select {
+  align-items: flex-end;
+}
+
+.menu span {
+  font-weight: bold;
+}
+
+.menu i {
+  margin-right: 20px;
+}
+
+.choice {
+  justify-content: space-between;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px;
+}
+.footer a {
+  color: white;
+}
+.footer h3 {
+  margin: 0px;
+  font-family: "shrikhand";
+  font-weight: normal;
+}
+.footer ul {
+  margin: 0px;
+  list-style-type: none;
+  padding: 14px 0px;
+}
+.footer li {
+  margin-bottom: 10px;
+}
+.footer i {
+  font-size: 12px;
+  margin-right: 12px;
+  width: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
