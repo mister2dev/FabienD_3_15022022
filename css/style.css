@@ -262,7 +262,7 @@ header .logo img {
 }
 
 .menu .select {
-  align-items: flex-end;
+  align-items: stretch;
 }
 
 .menu span {
@@ -271,6 +271,28 @@ header .logo img {
 
 .menu i {
   margin-right: 20px;
+}
+
+.menu .check-anim {
+  background-color: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  margin: -14px -10px -14px 0px;
+  transform-origin: right;
+  transition: transform 300ms 100ms linear;
+}
+.menu .check-anim div {
+  color: white;
+}
+.menu .check-anim i {
+  margin: 0px;
+  font-size: 24px;
+}
+
+.menu-anim:hover {
+  transform: scaleX(1);
 }
 
 .choice {
