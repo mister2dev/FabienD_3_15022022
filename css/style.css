@@ -297,10 +297,18 @@ header .logo img {
 .menu-anim {
   cursor: pointer;
 }
-.menu-anim:hover div {
-  transform: rotate(360deg);
+.menu-anim:hover .check-anim div {
+  animation: check-rotation 500ms 100ms;
 }
 
+@keyframes check-rotation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .menu-anim:hover .check-anim {
   transform: translate(0px);
 }

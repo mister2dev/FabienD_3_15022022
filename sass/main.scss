@@ -296,8 +296,20 @@ header .logo {
 
 .menu-anim {
     cursor: pointer;
-    &:hover div {
+    &:hover .check-anim div {
+        animation: check-rotation 500ms 100ms;
+    }
+}
+
+@keyframes check-rotation {
+    0%{
         transform: rotate(360deg);
+    }
+    50% {
+
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
 
