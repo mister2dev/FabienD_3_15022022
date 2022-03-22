@@ -281,18 +281,28 @@ header .logo img {
   width: 90px;
   margin: -14px -10px -14px 0px;
   transform-origin: right;
-  transition: transform 300ms 100ms linear;
+  transform: translate(80px);
+  transition: transform 500ms 100ms ease;
 }
 .menu .check-anim div {
   color: white;
+  transition: transform 500ms 100ms ease;
 }
 .menu .check-anim i {
+  transform: rotate(0deg);
   margin: 0px;
   font-size: 24px;
 }
 
-.menu-anim:hover {
-  transform: scaleX(1);
+.menu-anim {
+  cursor: pointer;
+}
+.menu-anim:hover div {
+  transform: rotate(360deg);
+}
+
+.menu-anim:hover .check-anim {
+  transform: translate(0px);
 }
 
 .choice {
