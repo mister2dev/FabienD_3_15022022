@@ -19,9 +19,9 @@ img {
 header .logo {
     text-align: center;
     padding: 24px 0px 10px 0px;
-    img {
-        width: 160px;
-    }
+        img {
+            width: 160px;
+        }
 }
 
 .localisation {
@@ -29,9 +29,9 @@ header .logo {
     padding: 16px 0px;
     background-color: #eaeaea;
     box-shadow: inset 0px 5px 4px -2px #CFCFCF;
-    i {
-        margin-right: 14px;
-    }
+        i {
+            margin-right: 14px;
+        }
 }
 
 .explore {
@@ -184,18 +184,6 @@ header .logo {
         }
 }
 
-.page-title {
-    font-family: 'shrikhand';
-    align-items: baseline;
-    justify-content: space-between;
-    margin-bottom: 28px;
-    display: flex;
-        h1 {
-            font-size: 26px;
-            font-weight: normal;
-        }
-}
-
 .head-img {
     height: 270px;
     object-fit: cover;
@@ -207,33 +195,58 @@ header .logo {
     top: -50px;
     display: flex;
     flex-direction: column;
-    h1 {
-        margin: 0px;
-    }
-}
-
-.menu section {
-    margin-bottom: 20px;
+        .page-title {
+            font-family: 'shrikhand';
+            align-items: baseline;
+            justify-content: space-between;
+            margin-bottom: 28px;
+            display: flex;
+                h1 {
+                    font-size: 26px;
+                    font-weight: normal;
+                    margin: 0px;
+                }
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 16px;
+            font-weight: normal;
+            &::after {
+                content: "";
+                display: block;
+                background-color: #99e2d0;
+                height: 3px;
+                width: 40px;
+                margin-top: 5px;
+            }
+        }
+        i {
+            margin-right: 20px;
+        }
 }
 
 .menu-anim {
     margin-bottom: 14px;
     opacity: 0;
+    cursor: pointer;
+        h3,p {
+            margin: 0px;
+        }
+        &:nth-of-type(1) {
+            animation: fondu 800ms 200ms forwards;
+        }
+        &:nth-of-type(2) {
+            animation: fondu 800ms 400ms forwards;
+        }
+        &:nth-of-type(3) {
+            animation: fondu 800ms 600ms forwards;
+        }
+        &:nth-of-type(4) {
+            animation: fondu 800ms 800ms forwards;
+        }
 }
-
-.menu-anim:nth-of-type(1) {
-    animation: fondu 800ms 200ms forwards;
-}
-.menu-anim:nth-of-type(2) {
-    animation: fondu 800ms 400ms forwards;
-}
-.menu-anim:nth-of-type(3) {
-    animation: fondu 800ms 600ms forwards;
-}
-.menu-anim:nth-of-type(4) {
-    animation: fondu 800ms 800ms forwards;
-}
-
 
 @keyframes fondu {
     0% {
@@ -245,56 +258,26 @@ header .logo {
     }
 }
 
-.menu-anim h3, .menu-anim p {
-    margin: 0px;
-}
-
-.menu h2 {
-    font-size: 16px;
-    font-weight: normal;
-    &::after {
-        content: "";
-        display: block;
-        background-color: #99e2d0;
-        height: 3px;
-        width: 40px;
-        margin-top: 5px;
-    }
-}
-
-.menu .select {
-    align-items: stretch;
-}
-
-.select .items, .select h3, .select p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 .select {
+    align-items: stretch;
     max-width: 87%;
+        .items, h3, p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .items {
+            flex: 1;
+        }
+        span {
+            display: flex;
+            align-items: flex-end;
+            margin-left: 6px;
+            font-weight: bold;
+        }
 }
 
-.select .items {
-    flex: 1;
-}
-
-.select span {
-    display: flex;
-    align-items: flex-end;
-    margin-left: 6px;
-}
-
-.menu span {
-    font-weight: bold;
-}
-
-.menu i {
-    margin-right: 20px;
-}
-
-.menu .check-anim {
+.menu .select .check-anim {
     background-color: #99e2d0;
     display: flex;
     justify-content: center;
@@ -313,13 +296,11 @@ header .logo {
     }
 }
 
-
-
-.menu-anim {
-    cursor: pointer;
-    &:hover .check-anim div {
-        animation: check-rotation 500ms 100ms;
-    }
+.menu-anim:hover .check-anim {
+    margin-right: -34px;
+        div {
+            animation: check-rotation 500ms 100ms;
+        }
 }
 
 @keyframes check-rotation {
@@ -334,28 +315,20 @@ header .logo {
     }
 }
 
-.menu-anim:hover .check-anim {
-        margin-right: -34px;
-}
-
-.choice {
-    justify-content: space-between;
-}
-
-/*----loading spinner---*/
-  .lds-ring {
-    display: flex;
-    position: fixed;
-    width: 80px;
-    height: 80px;
-    filter: blur(1px);
-    margin: auto;
-    transform: scale(0);
-    animation: load-ring 2s 100ms backwards;
-    background-color: rgba(189, 170, 212, 0.26);    z-index: 1;
-    justify-content: center;
-    align-items: center;
-  }
+/*----loading spinner----*/
+    .lds-ring {
+        display: flex;
+        position: fixed;
+        width: 80px;
+        height: 80px;
+        filter: blur(1px);
+        margin: auto;
+        transform: scale(0);
+        animation: load-ring 2s 100ms backwards;
+        background-color: rgba(189, 170, 212, 0.26);    z-index: 1;
+        justify-content: center;
+        align-items: center;
+    }
 
 @keyframes load-ring {
     0%, 100% {
@@ -365,7 +338,7 @@ header .logo {
     }    
 }
 
-  .lds-ring div {
+.lds-ring div {
     box-sizing: border-box;
     display: block;
     position: absolute;
@@ -376,25 +349,28 @@ header .logo {
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     border-color: #9356DC transparent transparent transparent;
-  }
-  .lds-ring div:nth-child(1) {
+}
+
+.lds-ring div:nth-child(1) {
     animation-delay: -0.45s;
-  }
-  .lds-ring div:nth-child(2) {
+}
+.lds-ring div:nth-child(2) {
     animation-delay: -0.3s;
-  }
-  .lds-ring div:nth-child(3) {
+}
+.lds-ring div:nth-child(3) {
     animation-delay: -0.15s;
-  }
-  @keyframes lds-ring {
+}
+
+@keyframes lds-ring {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
+}
 
+/*----footer----*/
 .footer {
     background-color: #353535;
     color: white;
@@ -419,5 +395,53 @@ header .logo {
         font-size: 12px;
         margin-right: 12px;
         width: 10px;
+    }
+}
+
+/*----version desktop----*/
+
+@media screen and (min-width:992px) {
+    .fonction {
+        text-align: center;
+            &__bloc {
+                display: flex;
+                    div {
+                        flex: 1;
+                        margin: 10px;
+                    }
+            }
+    }
+
+    .restaurants {
+        h2 {
+            text-align: center;
+        }
+        &__bloc {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    .restaurants__card {
+        min-width: 40%;
+        flex: 1;
+        margin: 16px;
+    }
+
+    .head-img {
+        height: 300px;
+    }
+
+    .menu-bloc {
+        display: flex;
+        justify-content: center;
+            h2 {
+                text-align: inherit;
+                margin-left: 18px;
+            }
+            section {
+                max-width: 30%;
+                flex: 1;
+            }
     }
 }
