@@ -1,10 +1,15 @@
+$bg-col:#f6f6f6;
+$primary-color: #9356dc;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+
 body {
     font-family:'Roboto' ;
     box-sizing: border-box;
 }
 
 .background {
-    background-color: #f6f6f6;
+    background-color: $bg-col;
 }
 
 a {
@@ -36,7 +41,7 @@ header .logo {
 
 .explore {
     padding: 40px;
-    background-color: #f6f6f6;
+    background-color: $bg-col;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -55,8 +60,8 @@ header .logo {
     padding: 18px 28px;
     color: white;
     border-radius: 30px;
-    background: #9356dc;
-    background: linear-gradient(353deg,#9356dc 0%, #ff79da 80%);
+    background: $primary-color;
+    background: linear-gradient(353deg,$primary-color 0%, $secondary-color 80%);
     filter: drop-shadow(0px 5px 4px #A1A1A1);
     transition: 200ms;
     &:hover {
@@ -71,7 +76,7 @@ header .logo {
 .fonction__bloc {
     div {
         margin: 22px 0px 22px 5px;
-        background-color: #f6f6f6;
+        background-color: $bg-col;
         font-weight: 700;
         height: 74px;
         border-radius: 20px;
@@ -81,14 +86,14 @@ header .logo {
         &:hover {
             background-color: #F5EDFF;
             i {
-                color: #9356dc;
+                color: $primary-color;
             }
         }
     }
     span {
         margin-left: -14px;
         color: white;
-        background-color: #9356dc;
+        background-color: $primary-color;
         height: 24px;
         width: 24px;
         border-radius: 30px;
@@ -102,7 +107,7 @@ header .logo {
         color: #919191;
         font-size: 18px;
         &:hover {
-            color: #9356dc;
+            color: $primary-color;
         }
     }
     .step1 i {
@@ -112,7 +117,7 @@ header .logo {
 }
 
 .restaurants {
-    background-color: #f6f6f6;
+    background-color: $bg-col;
     padding: 40px 20px 40px 20px;
         &__card {
         border-radius: 16px;
@@ -130,7 +135,7 @@ header .logo {
                 position: absolute;
                 top: 14px;
                 right: 12px;
-                background-color: #99e2d0;
+                background-color: $tertiary-color;
                 color: #0da17d;
                 padding: 6px 12px;
                 border-radius: 2px;
@@ -167,7 +172,7 @@ header .logo {
     position: absolute;
     left: 0px;
     bottom: 0px;
-    background: linear-gradient(0deg, #FF79DA, #9356DC);
+    background: linear-gradient(0deg, $secondary-color, $primary-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform:scale(0);
@@ -216,7 +221,7 @@ header .logo {
             &::after {
                 content: "";
                 display: block;
-                background-color: #99e2d0;
+                background-color: $tertiary-color;
                 height: 3px;
                 width: 40px;
                 margin-top: 5px;
@@ -260,7 +265,6 @@ header .logo {
 
 .select {
     align-items: stretch;
-    max-width: 87%;
         .items, h3, p {
             white-space: nowrap;
             overflow: hidden;
@@ -278,12 +282,12 @@ header .logo {
 }
 
 .menu .select .check-anim {
-    background-color: #99e2d0;
+    background-color: $tertiary-color;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 70px;
-    margin: -14px -104px -14px 16px;
+    margin: -14px -80px -14px 16px;
     transition: 500ms 100ms ease;
     div {
         color: white;
@@ -297,7 +301,7 @@ header .logo {
 }
 
 .menu-anim:hover .check-anim {
-    margin-right: -34px;
+    margin-right: -10px;
         div {
             animation: check-rotation 500ms 100ms;
         }
@@ -348,7 +352,7 @@ header .logo {
     border: 10px solid #fff;
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #9356DC transparent transparent transparent;
+    border-color: $primary-color transparent transparent transparent;
 }
 
 .lds-ring div:nth-child(1) {
@@ -423,9 +427,9 @@ header .logo {
     }
 
     .restaurants__card {
+        margin: 16px;
         min-width: 40%;
         flex: 1;
-        margin: 16px;
     }
 
     .head-img {
@@ -437,11 +441,14 @@ header .logo {
         justify-content: center;
             h2 {
                 text-align: inherit;
-                margin-left: 18px;
+                margin-left: 10px;
             }
             section {
-                max-width: 30%;
+                width: 33%;
                 flex: 1;
+            }
+            .restaurants__card {
+                margin: 14px 7px;
             }
     }
 }

@@ -56,7 +56,7 @@ header .logo img {
   color: white;
   border-radius: 30px;
   background: #9356dc;
-  background: linear-gradient(353deg, #9356dc 0%, #ff79da 80%);
+  background: linear-gradient(353deg, #9356dc 0%, #FF79DA 80%);
   filter: drop-shadow(0px 5px 4px #A1A1A1);
   transition: 200ms;
 }
@@ -131,7 +131,7 @@ header .logo img {
   position: absolute;
   top: 14px;
   right: 12px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #0da17d;
   padding: 6px 12px;
   border-radius: 2px;
@@ -166,7 +166,7 @@ header .logo img {
   position: absolute;
   left: 0px;
   bottom: 0px;
-  background: linear-gradient(0deg, #FF79DA, #9356DC);
+  background: linear-gradient(0deg, #FF79DA, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(0);
@@ -216,7 +216,7 @@ header .logo img {
 .menu h2::after {
   content: "";
   display: block;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   height: 3px;
   width: 40px;
   margin-top: 5px;
@@ -257,7 +257,6 @@ header .logo img {
 }
 .select {
   align-items: stretch;
-  max-width: 87%;
 }
 .select .items, .select h3, .select p {
   white-space: nowrap;
@@ -275,12 +274,12 @@ header .logo img {
 }
 
 .menu .select .check-anim {
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 70px;
-  margin: -14px -104px -14px 16px;
+  margin: -14px -80px -14px 16px;
   transition: 500ms 100ms ease;
 }
 .menu .select .check-anim div {
@@ -294,7 +293,7 @@ header .logo img {
 }
 
 .menu-anim:hover .check-anim {
-  margin-right: -34px;
+  margin-right: -10px;
 }
 .menu-anim:hover .check-anim div {
   animation: check-rotation 500ms 100ms;
@@ -341,7 +340,7 @@ header .logo img {
   border: 10px solid #fff;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #9356DC transparent transparent transparent;
+  border-color: #9356dc transparent transparent transparent;
 }
 
 .lds-ring div:nth-child(1) {
@@ -414,9 +413,9 @@ header .logo img {
   }
 
   .restaurants__card {
+    margin: 16px;
     min-width: 40%;
     flex: 1;
-    margin: 16px;
   }
 
   .head-img {
@@ -429,11 +428,14 @@ header .logo img {
   }
   .menu-bloc h2 {
     text-align: inherit;
-    margin-left: 18px;
+    margin-left: 10px;
   }
   .menu-bloc section {
-    max-width: 30%;
+    width: 33%;
     flex: 1;
+  }
+  .menu-bloc .restaurants__card {
+    margin: 14px 7px;
   }
 }
 
