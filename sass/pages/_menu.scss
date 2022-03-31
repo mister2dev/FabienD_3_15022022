@@ -1,0 +1,73 @@
+.menu {
+    border-radius: 40px 40px 0px 0px;
+    position: relative;
+    top: -50px;
+    display: flex;
+    flex-direction: column;
+        .page-title {
+            font-family: 'shrikhand';
+            align-items: baseline;
+            justify-content: space-between;
+            margin-bottom: 28px;
+            display: flex;
+                h1 {
+                    font-size: 26px;
+                    font-weight: normal;
+                    margin: 0px;
+                }
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 16px;
+            font-weight: normal;
+            &::after {
+                content: "";
+                display: block;
+                background-color: $tertiary-color;
+                height: 3px;
+                width: 40px;
+                margin-top: 5px;
+            }
+        }
+        i {
+            margin-right: 20px;
+        }
+}
+
+.select {
+    align-items: stretch;
+        .items, h3, p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .items {
+            flex: 1;
+        }
+        span {
+            display: flex;
+            align-items: flex-end;
+            margin-left: 6px;
+            font-weight: bold;
+        }
+}
+
+@media screen and (min-width:992px) {
+    .menu-bloc {
+        display: flex;
+        justify-content: center;
+            h2 {
+                text-align: inherit;
+                margin-left: 10px;
+            }
+            section {
+                width: 33%;
+                flex: 1;
+            }
+            .restaurants__card {
+                margin: 14px 7px;
+            }
+    }
+}

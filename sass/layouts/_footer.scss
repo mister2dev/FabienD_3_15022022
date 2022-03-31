@@ -1,0 +1,26 @@
+.footer {
+    background-color: #353535;
+    color: white;
+    padding: 20px;
+    a {
+        color: white;
+    }
+    h3{
+        margin: 0px;
+        font-family: 'shrikhand';
+        font-weight: normal;
+    }
+    ul {
+        margin: 0px;
+        list-style-type: none;
+        padding: 14px 0px;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    i {
+        font-size: 12px;
+        margin-right: 12px;
+        width: 10px;
+    }
+}

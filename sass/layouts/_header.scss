@@ -1,0 +1,20 @@
+header .logo {
+    text-align: center;
+    padding: 24px 0px 10px 0px;
+        img {
+            width: 160px;
+        }
+}
+
+.logo a {
+    position: absolute;
+    left: 20px;
+        i {
+            font-size: larger;
+        }
+}
+
+.head-img {
+    height: 270px;
+    object-fit: cover;
+}
