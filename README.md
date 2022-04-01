@@ -23,20 +23,18 @@ restaurants car leur menu est préparé à l’avance.
 
 **Technologies :**
 
-- Le développement devra se faire en CSS, sans JavaScript.
+- CSS sans JavaScript.
 
-- Aucun framework ne devra être utilisé, en revanche l’utilisation de SASS serait un
-plus.
+- Aucun framework autorisé mais SASS serait un plus.
 
-- Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML.
+- Aucun code CSS via un attribut style dans une balise HTML.
 
 - Tout le code doit être versionné sur GitHub et le site devra être accessible sur
 Github Pages une fois terminé.
 
-**Compatibilité :*
+**Compatibilité :**
 
-La cible étant les personnes connectées et pressées, le site sera développé en utilisant
-l’approche mobile-first. Pour cette raison, seules des maquettes mobiles seront réalisées.
+Le site sera développé en utilisant l’approche mobile-first. Pour cette raison, seules des maquettes mobiles seront réalisées.
 Sur tablette et desktop, le site devra s’adapter, mais ces supports n’étant pas prioritaires,
 leur mise en page est libre.
 
@@ -46,3 +44,21 @@ leur mise en page est libre.
 
 - Le site doit être parfaitement compatible avec les dernières versions desktop de
 Chrome et Firefox.
+
+##Livrables
+
+### Contenu des pages
+
+**Page d’accueil (x1)**
+
+- Affichage de la localisation des restaurants. À terme il sera possible de choisir sa
+localisation pour trouver des restaurants proches d’un certain lieu.
+ 
+- Une courte présentation de l’entreprise.
+
+- Une section contenant les 4 menus sous forme cartes. Au clic sur la carte,
+l’utilisateur est redirigé vers la page du menu.
+
+**Pages de menu (x4)**
+
+- Quatre pages contenant chacune le menu d’un restaurant.
