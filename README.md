@@ -1,5 +1,6 @@
 ﻿# Ohmyfood
-Projet 3 du parcours Développeur Web d'Openclassrooms.
+
+## Projet 3 du parcours Développeur Web d'Openclassrooms.
 
 Objectif : Dynamisez une page web avec des animations CSS
 
@@ -7,7 +8,10 @@ Ohmyfood! est une entreprise de commande de repas en ligne permetant aux
 utilisateurs de composer leur propre menu et de réduire leur temps d’attente dans les
 restaurants car leur menu est préparé à l’avance.
 
+
+
 <img src="https://user.oc-static.com/upload/2020/08/24/15982605908418_Maquettes%20Ohmyfood.jpg" alt="maquette du site" />
+
 
 
 ## Caractéristiques techniques
@@ -45,7 +49,7 @@ leur mise en page est libre.
 - Le site doit être parfaitement compatible avec les dernières versions desktop de
 Chrome et Firefox.
 
-##Livrables
+## Livrables
 
 ### Contenu des pages
 
