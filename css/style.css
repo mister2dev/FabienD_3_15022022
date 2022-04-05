@@ -50,6 +50,7 @@ img {
   left: 0px;
   bottom: 0px;
   background: linear-gradient(0deg, #FF79DA, #9356dc);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(0);
@@ -182,17 +183,19 @@ img {
 header .logo {
   text-align: center;
   padding: 24px 0px 10px 0px;
-}
-header .logo img {
-  width: 160px;
+  font-family: "shrikhand";
+  font-size: 30px;
+  margin: 0px;
+  font-weight: normal;
 }
 
 .logo a {
   position: absolute;
   left: 20px;
+  top: 20px;
 }
 .logo a i {
-  font-size: larger;
+  font-size: 20px;
 }
 
 .head-img {

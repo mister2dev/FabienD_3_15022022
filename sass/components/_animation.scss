@@ -17,6 +17,7 @@
     left: 0px;
     bottom: 0px;
     background: linear-gradient(0deg, $secondary-color, $primary-color);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform:scale(0);

@@ -1,16 +1,18 @@
 header .logo {
     text-align: center;
     padding: 24px 0px 10px 0px;
-        img {
-            width: 160px;
-        }
+    font-family: 'shrikhand';
+    font-size: 30px;
+    margin: 0px;
+    font-weight: normal;
 }
 
 .logo a {
     position: absolute;
     left: 20px;
+    top: 20px;
         i {
-            font-size: larger;
+            font-size: 20px;
         }
 }
 
